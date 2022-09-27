@@ -155,14 +155,163 @@ button {
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 5px;
-
-
-
-
-
-@media screen and (min-width: 480px) {
-
 }
+
+@media screen and (max-width: 426px) {
+  .nav-section {
+    display: flex;
+    padding: 30px 15px;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .search-section {
+    margin: 7% 5%;
+    width: 90%;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  
+  h5 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 16px;
+    font-weight: 900;
+    padding-bottom: 10px;
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    padding: 3px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-between;
+  }
+  
+  .form-control i {
+    opacity: 0.5;
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    opacity: 0.5;
+    border: none;
+    padding: 20px;
+  }
+  
+  button {
+    border: none;
+    background-color: #ffffff;
+  }
+  
+  .dropDown {
+    width: 230px;
+    margin: 0 5%;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 98%);
+  }
+  
+  .drop {
+    display: flex;
+    margin-bottom: 2%;
+    padding: 20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .continents {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .continents p {
+    padding-bottom: 8px;
+  }
+  
+  #country {
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    padding:5%;
+  }
+  
+  #countries-section {
+    width: 85%;
+    margin: 15% auto;
+  }
+  
+  #countries-section img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .country-details {
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+  
+  .country-details p>strong {
+    font-size: 13px;
+  }
+  
+  .country-details p {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .search-section {
+    margin: 7% 5%;
+    width: 40%;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  }
+
+  .dropDown {
+    width: 230px;
+    margin: 0 5%;
+    position: fixed;
+    top: 140px;
+    right: 0;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  #country {
+    top: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding:2%;
+    position: absolute;
+  }
+}
+
+
+
 
 
 
