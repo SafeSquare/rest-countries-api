@@ -61,7 +61,7 @@ let oceaniaBtn = document.getElementById("btn-oceania");
 
 
 africaBtn.addEventListener("click", function() {
-  fetch("https://restcountries.com/v3.1/region/africa")
+  fetch("https://restcountries.com/v2/region/africa")
   .then((response) => response.json())
   .then((data) => {
 
@@ -75,7 +75,7 @@ africaBtn.addEventListener("click", function() {
       <div id="countries-section">
         <img src="${post.flags.png}" alt="Country Flag">
         <div class="country-details">
-          <h3>${post.name.common}</h3>
+          <h3>${post.name}</h3>
           <p> <strong>Population:</strong> ${post.population}</p>
           <p> <strong>Region:</strong> ${post.region}</p>
           <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -89,7 +89,7 @@ africaBtn.addEventListener("click", function() {
 })
 
 americaBtn.addEventListener("click", function() {
-  fetch("https://restcountries.com/v3.1/region/america")
+  fetch("https://restcountries.com/v2/region/americas")
   .then((response) => response.json())
   .then((data) => {
 
@@ -103,7 +103,7 @@ americaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name.common}</h3>
+                <h3>${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -117,7 +117,7 @@ americaBtn.addEventListener("click", function() {
 })
 
 asiaBtn.addEventListener("click", function() {
-  fetch("https://restcountries.com/v3.1/region/asia")
+  fetch("https://restcountries.com/v2/region/asia")
   .then((response) => response.json())
   .then((data) => {
 
@@ -131,7 +131,7 @@ asiaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name.common}</h3>
+                <h3>${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -145,7 +145,7 @@ asiaBtn.addEventListener("click", function() {
 })
 
 europeBtn.addEventListener("click", function() {
-  fetch("https://restcountries.com/v3.1/region/europe")
+  fetch("https://restcountries.com/v2/region/europe")
   .then((response) => response.json())
   .then((data) => {
 
@@ -159,7 +159,7 @@ europeBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name.common}</h3>
+                <h3>${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -173,7 +173,7 @@ europeBtn.addEventListener("click", function() {
 })
 
 oceaniaBtn.addEventListener("click", function() {
-  fetch("https://restcountries.com/v3.1/region/oceania")
+  fetch("https://restcountries.com/v2/region/oceania")
   .then((response) => response.json())
   .then((data) => {
 
@@ -187,7 +187,7 @@ oceaniaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name.common}</h3>
+                <h3>${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
