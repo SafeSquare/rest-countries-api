@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+  <title>ALL COUNTRIES</title>
+</head>
+<body>
+  <nav class="nav-section">
+    <h1>Where in the world?</h1>
+    <h5> <i class="fa-regular fa-moon"></i> Dark Mode</h5>
+  </nav>
+
+  <div class="search-section">
+    <div class="form-control">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text"  placeholder="Search for a country...">
+    </div>
+  </div>
+
+  <main>
+    <div class="dropDown">
+      <div class="drop">
+        <p>Filter by Region</p>
+        <button id="btn" ><i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      <div class="continents show-list">
+        <button id="btn-africa"><p>Africa</p></button>
+        <button id="btn-america" ><p>America</p></button>
+        <button id="btn-asia"><p>Asia</p></button>
+        <button id="btn-europe"><p>Europe</p></button>
+        <button id="btn-oceania"><p>Oceania</p></button>
+      </div>
+    </div>
+
+    <div id="country">
+      <div id="countries-section">
+        <img src="https://flagcdn.com/w320/gt.png" alt="Country Flag">
+        <div class="country-details">
+          <h3>Germany</h3>
+          <p> <strong>Population:</strong> 1000,000</p>
+          <p> <strong>Region:</strong> Europe</p>
+          <p> <strong>Capital:</strong> Berlin</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/86298f4f11.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- .nav-section {
+  display: flex;
+  padding: 30px 15px;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.search-section {
+  margin: 7% 5%;
+  width: 90%;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-control {
+  padding: 3px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.form-control i {
+  opacity: 0.5;
+  padding: 20px;
+}
+
+input[type="text"] {
+  opacity: 0.5;
+  border: none;
+  padding: 20px;
+}
+
+button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.dropDown {
+  width: 230px;
+  margin: 0 5%;
+  position: fixed;
+  top: 220px;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.drop {
+  display: flex;
+  margin-bottom: 2%;
+  padding: 20px;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.continents {
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.continents p {
+  padding-bottom: 8px;
+}
+
+.country {
+  margin-top: 65%;
+}
+
+#countries-section {
+  width: 85%;
+  margin: 15% auto;
+}
+
+#countries-section img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.country-details {
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.country-details p>strong {
+  font-size: 13px;
+}
+
+.country-details p {
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 5px;
+} -->
