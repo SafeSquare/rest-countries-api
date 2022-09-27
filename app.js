@@ -1,5 +1,5 @@
-// let darkMode = document.getElementById("dark-effect");
-// let target = document.querySelector(".effect");
+// let darkMode = document.getElementById("dark-btn");
+// let target = document.querySelector(".dark-element");
   
 
 // darkMode.addEventListener("click", function() {
@@ -7,14 +7,14 @@
 // });
 
 // function toggleDarkMode() {
-//   target.classList.toggle("dark-mode");
+//   target.classList.toggle("dark-effect");
 // }
 
 let countryDetails = [];
 let postBox = document.getElementById("country");
 
 function getPosts() {
-  fetch("https:restcountries.com/v2/all")
+  fetch("https://restcountries.com/v2/all")
   .then((response) => response.json())
   .then((data) => {
     let countryDetails = data;
@@ -27,7 +27,7 @@ function getPosts() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name}</h3>
+                <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -75,7 +75,7 @@ africaBtn.addEventListener("click", function() {
       <div id="countries-section">
         <img src="${post.flags.png}" alt="Country Flag">
         <div class="country-details">
-          <h3>${post.name}</h3>
+          <h3 class="country-name">${post.name}</h3>
           <p> <strong>Population:</strong> ${post.population}</p>
           <p> <strong>Region:</strong> ${post.region}</p>
           <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -103,7 +103,7 @@ americaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name}</h3>
+                <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -131,7 +131,7 @@ asiaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name}</h3>
+                <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -159,7 +159,7 @@ europeBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name}</h3>
+                <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -187,7 +187,7 @@ oceaniaBtn.addEventListener("click", function() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name}</h3>
+                <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
@@ -199,6 +199,13 @@ oceaniaBtn.addEventListener("click", function() {
     postBox.innerHTML = postHolder;
   });
 })
+
+let searchCountry = document.getElementById("search");
+let countryName = document.querySelector(".country-name")
+searchCountry.addEventListener("input", function() {
+  console.log(searchCountry.value);
+  item = searchCountry.value.toLowerCase;
+});
 
 
 

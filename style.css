@@ -7,17 +7,19 @@
 
 body {
   width: 100%;
+  /* color: hsl(200, 15%, 8%); */
   background-color: hsl(0, 0%, 98%);
 }
-/* 
-.dark-elements {
-  color: #ffffff !important;
-  background-color: hsl(207, 26%, 17%) !important;
-}
 
-.dark-mode {
+ /* .dark-effect {
   background-color: hsl(209, 23%, 22%)  !important;
   color: #ffffff !important;
+}
+
+.dark-elements {
+  padding: 20px;
+  color: #ffffff;
+  background-color: hsl(209, 23%, 22%);
 } */
 
 .nav-section {
@@ -81,7 +83,7 @@ input[type="text"] {
   opacity: 0.5;
   border: none;
   padding: 20px;
-  /* background-color: hsl(209, 23%, 22%); */
+  /* background-color: #ffffff; */
 }
 
 button {
