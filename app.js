@@ -14,7 +14,7 @@ let countryDetails = [];
 let postBox = document.getElementById("country");
 
 function getPosts() {
-  fetch("https:restcountries.com/v3.1/all")
+  fetch("https:restcountries.com/v2/all")
   .then((response) => response.json())
   .then((data) => {
     let countryDetails = data;
@@ -27,7 +27,7 @@ function getPosts() {
             <div id="countries-section">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
-                <h3>${post.name.common}</h3>
+                <h3>${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
