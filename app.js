@@ -18,7 +18,7 @@ function getPosts() {
   .then((response) => response.json())
   .then((data) => {
     let countryDetails = data;
-    console.log(countryDetails)
+    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -66,7 +66,7 @@ africaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    console.log(countryDetails)
+    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -94,7 +94,7 @@ americaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    console.log(countryDetails)
+    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -122,7 +122,7 @@ asiaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    console.log(countryDetails)
+    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -149,7 +149,7 @@ europeBtn.addEventListener("click", function() {
   .then((response) => response.json())
   .then((data) => {
 
-    let countryDetails = data;
+    // let countryDetails = data;
     console.log(countryDetails)
     let postHolder = "";
 
@@ -178,7 +178,7 @@ oceaniaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    console.log(countryDetails)
+    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
