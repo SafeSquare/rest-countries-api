@@ -22,6 +22,7 @@ body {
 
 .nav-section button {
   padding: 10px;
+  cursor: pointer;
 }
 
 .search-section {
@@ -94,6 +95,7 @@ button {
   margin-bottom: 2%;
   padding: 20px;
   width: 100%;
+  cursor: pointer;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
@@ -109,6 +111,7 @@ button {
 
 .continents p {
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
 #country {
