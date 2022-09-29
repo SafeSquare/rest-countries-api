@@ -1,15 +1,3 @@
-// let darkMode = document.getElementById("dark-btn");
-// let target = document.querySelector(".dark-element");
-  
-
-// darkMode.addEventListener("click", function() {
-//   toggleDarkMode();
-// });
-
-// function toggleDarkMode() {
-//   target.classList.toggle("dark-effect");
-// }
-
 let countryDetails = [];
 let postBox = document.getElementById("country");
 
@@ -50,7 +38,7 @@ buttonRegion.addEventListener("click", function() {
 
 let countryDetail = document.querySelector(".continents");
 function toggleMode() {
-  countryDetail.classList.toggle("show-list");
+  countryDetail.classList.toggle("show-list")
 }
 
 let africaBtn = document.getElementById("btn-africa");
@@ -66,10 +54,9 @@ africaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    // console.log(countryDetails)
     let postHolder = "";
 
-    countryDetails.forEach(post => {
+    countryDetails.forEach(pcfost => {
       postHolder += `
       <div class="country">
       <div id="countries-section">
@@ -94,7 +81,6 @@ americaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -122,7 +108,6 @@ asiaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -149,8 +134,7 @@ europeBtn.addEventListener("click", function() {
   .then((response) => response.json())
   .then((data) => {
 
-    // let countryDetails = data;
-    console.log(countryDetails)
+    let countryDetails = data;
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -178,7 +162,6 @@ oceaniaBtn.addEventListener("click", function() {
   .then((data) => {
 
     let countryDetails = data;
-    // console.log(countryDetails)
     let postHolder = "";
 
     countryDetails.forEach(post => {
@@ -200,12 +183,17 @@ oceaniaBtn.addEventListener("click", function() {
   });
 })
 
-let searchCountry = document.getElementById("search");
-let countryName = document.querySelector(".country-name")
-searchCountry.addEventListener("input", function() {
-  console.log(searchCountry.value);
-  item = searchCountry.value.toLowerCase;
-});
+// let darkMode = document.getElementById("dark-btn");
+// let target = document.querySelector(".dark-element");
+  
+
+// darkMode.addEventListener("click", function() {
+//   toggleDarkMode();
+// });
+
+// function toggleDarkMode() {
+//   target.classList.toggle("dark-effect");
+// }
 
 
 

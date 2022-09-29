@@ -7,20 +7,8 @@
 
 body {
   width: 100%;
-  /* color: hsl(200, 15%, 8%); */
   background-color: hsl(0, 0%, 98%);
 }
-
- /* .dark-effect {
-  background-color: hsl(209, 23%, 22%)  !important;
-  color: #ffffff !important;
-}
-
-.dark-elements {
-  padding: 20px;
-  color: #ffffff;
-  background-color: hsl(209, 23%, 22%);
-} */
 
 .nav-section {
   display: flex;
@@ -40,7 +28,6 @@ body {
   z-index: 1;
   margin: 5%;
   width: 30%;
-  position: fixed;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
 
@@ -67,7 +54,7 @@ p {
 
 
 .form-control {
-  padding: 3px;
+  width: 100%;
   border-radius: 5px;
   align-items: center;
   background-color: #ffffff;
@@ -76,14 +63,13 @@ p {
 
 .form-control i {
   opacity: 0.5;
-  padding: 20px;
+  padding: 30px;
 }
 
 input[type="text"] {
   opacity: 0.5;
   border: none;
   padding: 20px;
-  /* background-color: #ffffff; */
 }
 
 button {
@@ -96,9 +82,9 @@ button {
   width: 230px;
   margin: 0 3%;
   z-index: 1;
-  position: fixed;
-  top: 155px;
-  right: 20px;
+  position: absolute;
+  top: 160px;
+  right: 40px;
   border-radius: 5px;
   background-color: hsl(0, 0%, 98%);
 }
@@ -107,6 +93,7 @@ button {
   display: flex;
   margin-bottom: 2%;
   padding: 20px;
+  width: 100%;
   justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
@@ -173,7 +160,6 @@ button {
   .search-section {
     margin: 7% 5%;
     width: 90%;
-    position: fixed;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   }
   
@@ -225,7 +211,6 @@ button {
   .dropDown {
     width: 230px;
     margin: 0 5%;
-    position: fixed;
     top: 200px;
     left: 0;
     border-radius: 5px;
@@ -288,14 +273,12 @@ button {
   .search-section {
     margin: 7% 5%;
     width: 40%;
-    position: fixed;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   }
 
   .dropDown {
     width: 230px;
     margin: 0 5%;
-    position: fixed;
     top: 140px;
     right: 0;
     border-radius: 5px;
@@ -311,6 +294,17 @@ button {
     position: absolute;
   }
 }
+
+ /* .dark-effect {
+  background-color: hsl(209, 23%, 22%)  !important;
+  color: #ffffff !important;
+}
+
+.dark-elements {
+  padding: 20px;
+  color: #ffffff;
+  background-color: hsl(209, 23%, 22%);
+} */
 
 
 
