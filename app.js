@@ -194,7 +194,7 @@ let targetSeven = document.querySelector(".mode-three");
 let targetEight = document.querySelector(".mode-four");
 let targetNine = document.querySelector(".mode-five");
 let targetTen = document.getElementById("search");
-let targetEleven = document.querySelector(".mode-six");
+// let targetEleven = document.querySelector(".mode-six");
 let targetTwelve = document.querySelector(".nav-section");
 let targetThirteen = document.querySelector("button");
 
@@ -215,7 +215,7 @@ function toggleDarkMode() {
   targetEight.classList.toggle("dark-elements");
   targetNine.classList.toggle("dark-elements");
   targetTen.classList.toggle("dark-elements");
-  targetEleven.classList.toggle("dark-elements");
+  // targetEleven.classList.toggle("dark-elements");
   targetTwelve.classList.toggle("dark-elements");
   targetThirteen.classList.toggle("dark-elements");
 }

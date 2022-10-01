@@ -19,11 +19,14 @@ body {
   background-color: hsl(209, 23%, 22%) !important;
 }
 
+.dark-elements .nav-section button {
+  background-color: hsl(209, 23%, 22%) !important;
+}
+
 .nav-section {
   display: flex;
   padding: 30px 70px;
   align-items: center;
-  background-color: #ffffff;
   justify-content: space-between;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
@@ -166,7 +169,6 @@ button {
     display: flex;
     padding: 30px 15px;
     align-items: center;
-    background-color: #ffffff;
     justify-content: space-between;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
