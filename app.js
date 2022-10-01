@@ -183,17 +183,42 @@ oceaniaBtn.addEventListener("click", function() {
   });
 })
 
-// let darkMode = document.getElementById("dark-btn");
-// let target = document.querySelector(".dark-element");
+let darkMode = document.getElementById("dark-btn");
+let target = document.querySelector(".effect");
+let targetTwo = document.querySelector(".form-control");
+let targetThree = document.querySelector(".dropDown");
+let targetFour = document.querySelector(".drop");
+let targetFive = document.querySelector(".mode");
+let targetSix = document.querySelector(".mode-two");
+let targetSeven = document.querySelector(".mode-three");
+let targetEight = document.querySelector(".mode-four");
+let targetNine = document.querySelector(".mode-five");
+let targetTen = document.getElementById("search");
+let targetEleven = document.querySelector(".mode-six");
+let targetTwelve = document.querySelector(".nav-section");
+let targetThirteen = document.querySelector("button");
+
   
 
-// darkMode.addEventListener("click", function() {
-//   toggleDarkMode();
-// });
+darkMode.addEventListener("click", function() {
+  toggleDarkMode();
+});
 
-// function toggleDarkMode() {
-//   target.classList.toggle("dark-effect");
-// }
+function toggleDarkMode() {
+  target.classList.toggle("dark-effect");
+  targetTwo.classList.toggle("dark-elements");
+  targetThree.classList.toggle("dark-elements");
+  targetFour.classList.toggle("dark-elements");
+  targetFive.classList.toggle("dark-elements");
+  targetSix.classList.toggle("dark-elements");
+  targetSeven.classList.toggle("dark-elements");
+  targetEight.classList.toggle("dark-elements");
+  targetNine.classList.toggle("dark-elements");
+  targetTen.classList.toggle("dark-elements");
+  targetEleven.classList.toggle("dark-elements");
+  targetTwelve.classList.toggle("dark-elements");
+  targetThirteen.classList.toggle("dark-elements");
+}
 
 
 
