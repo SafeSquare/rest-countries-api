@@ -12,7 +12,7 @@ function getPosts() {
     countryDetails.forEach(post => {
       postHolder += `
           <div class="country">
-            <div id="countries-section">
+            <div id="countries-section" class="mode-six" class="mode-six">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
                 <h3 class="country-name">${post.name}</h3>
@@ -56,19 +56,19 @@ africaBtn.addEventListener("click", function() {
     let countryDetails = data;
     let postHolder = "";
 
-    countryDetails.forEach(pcfost => {
+    countryDetails.forEach(post => {
       postHolder += `
-      <div class="country">
-      <div id="countries-section">
-        <img src="${post.flags.png}" alt="Country Flag">
-        <div class="country-details">
-          <h3 class="country-name">${post.name}</h3>
-          <p> <strong>Population:</strong> ${post.population}</p>
-          <p> <strong>Region:</strong> ${post.region}</p>
-          <p> <strong>Capital:</strong> ${post.capital}</p>
+        <div class="country">
+          <div id="countries-section" class="mode-six">
+            <img src="${post.flags.png}" alt="Country Flag">
+            <div class="country-details">
+              <h3 class="country-name">${post.name}</h3>
+              <p> <strong>Population:</strong> ${post.population}</p>
+              <p> <strong>Region:</strong> ${post.region}</p>
+              <p> <strong>Capital:</strong> ${post.capital}</p>
+            </div>
           </div>
-      </div>
-    </div>
+        </div>
       `
     });
     postBox.innerHTML = postHolder;
@@ -86,14 +86,14 @@ americaBtn.addEventListener("click", function() {
     countryDetails.forEach(post => {
       postHolder += `
           <div class="country">
-            <div id="countries-section">
+            <div id="countries-section" class="mode-six">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
                 <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
-                </div>
+              </div>
             </div>
           </div>
       `
@@ -113,14 +113,14 @@ asiaBtn.addEventListener("click", function() {
     countryDetails.forEach(post => {
       postHolder += `
           <div class="country">
-            <div id="countries-section">
+            <div id="countries-section" class="mode-six">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
                 <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
-                </div>
+              </div>
             </div>
           </div>
       `
@@ -140,14 +140,14 @@ europeBtn.addEventListener("click", function() {
     countryDetails.forEach(post => {
       postHolder += `
           <div class="country">
-            <div id="countries-section">
+            <div id="countries-section" class="mode-six">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
                 <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
-                </div>
+              </div>
             </div>
           </div>
       `
@@ -167,14 +167,14 @@ oceaniaBtn.addEventListener("click", function() {
     countryDetails.forEach(post => {
       postHolder += `
           <div class="country">
-            <div id="countries-section">
+            <div id="countries-section" class="mode-six">
               <img src="${post.flags.png}" alt="Country Flag">
               <div class="country-details">
                 <h3 class="country-name">${post.name}</h3>
                 <p> <strong>Population:</strong> ${post.population}</p>
                 <p> <strong>Region:</strong> ${post.region}</p>
                 <p> <strong>Capital:</strong> ${post.capital}</p>
-                </div>
+              </div>
             </div>
           </div>
       `
@@ -188,15 +188,17 @@ let target = document.querySelector(".effect");
 let targetTwo = document.querySelector(".form-control");
 let targetThree = document.querySelector(".dropDown");
 let targetFour = document.querySelector(".drop");
-let targetFive = document.querySelector(".mode");
+let targetFive = document.querySelector(".mode-one");
 let targetSix = document.querySelector(".mode-two");
 let targetSeven = document.querySelector(".mode-three");
 let targetEight = document.querySelector(".mode-four");
 let targetNine = document.querySelector(".mode-five");
 let targetTen = document.getElementById("search");
-// let targetEleven = document.querySelector(".mode-six");
+let targetEleven = document.querySelector(".mode-six");
 let targetTwelve = document.querySelector(".nav-section");
 let targetThirteen = document.querySelector("button");
+let targetFourteen = document.querySelector(".find");
+
 
   
 
@@ -215,10 +217,14 @@ function toggleDarkMode() {
   targetEight.classList.toggle("dark-elements");
   targetNine.classList.toggle("dark-elements");
   targetTen.classList.toggle("dark-elements");
-  // targetEleven.classList.toggle("dark-elements");
+  targetEleven.classList.toggle("dark-elements");
   targetTwelve.classList.toggle("dark-elements");
   targetThirteen.classList.toggle("dark-elements");
-}
+  targetFourteen.classList.toggle("dark-elements");
+} 
+
+
+
 
 
 
